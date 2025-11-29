@@ -1,0 +1,65 @@
+/* full section background image */
+.projects-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* dark overlay for readability */
+.projects-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7); /* light overlay so text black dikhe */
+  z-index: 0;
+}
+
+.projects.container,
+.projects .projects-header,
+.projects .all-projects {
+  position: relative;
+  z-index: 1;
+}
+
+/* bigger typography, black text */
+.projects .projects-header h1 {
+  color: #000;
+  font-size: 3.6rem;
+}
+
+.projects .project-info h1 {
+  font-size: 2.6rem;
+  color: #000;
+  margin-bottom: 0.6rem;
+}
+
+.projects .project-info h2 {
+  font-size: 1.7rem;
+  color: #111827;
+  margin-bottom: 0.6rem;
+}
+
+.projects .project-info p {
+  font-size: 1.5rem;
+  color: #111827;
+  line-height: 1.7;
+}
+
+/* cards with subtle background to pop on image */
+.overlay-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  padding: 2.4rem 2.8rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.4);
+}
+
+/* agar future mein project ke andar chhoti image rakhni ho: */
+.overlay-card .project-img img {
+  width: 120px;    /* small size images */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}

@@ -1,0 +1,89 @@
+/* ---------- Global Reset & Typography ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 64%;           /* a bit larger base */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #020817; /* deep navy */
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* Utility containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section spacing */
+section {
+  padding: 8rem 0;
+}
+
+/* ---------- Headings & paragraphs ---------- */
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+/* ---------- Text color helpers for image backgrounds ---------- */
+/* Use on containers where background image is light
+   Example: <section className="projects-bg text-on-image"> */
+.text-on-image {
+  color: #000000;
+}
+
+.text-on-image h1,
+.text-on-image h2,
+.text-on-image h3,
+.text-on-image p,
+.text-on-image a {
+  color: #000000;
+}
+
+/* ---------- About image (img-2) smaller ---------- */
+/* About component: <img src={img2} className="about-photo" ... /> */
+.about-photo {
+  width: 220px;    /* smaller than before */
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}

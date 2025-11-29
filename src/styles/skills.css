@@ -1,0 +1,50 @@
+/* whole section dark background */
+.skills-section {
+  background: #020617;
+}
+
+/* wrapper like image */
+.skills-hex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 4rem;
+}
+
+/* hex‑like cards */
+.skill-hex {
+  width: 130px;
+  height: 130px;
+  background: #020617;
+  border-radius: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.8);
+  isolation: isolate;
+}
+
+/* pseudo border path */
+.skill-hex::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  border-top-color: #f97316;   /* orange */
+  border-right-color: #22c55e; /* green */
+  border-bottom-color: #38bdf8;/* blue */
+  border-left-color: #eab308;  /* yellow */
+  transform: rotate(4deg);
+  z-index: -1;
+}
+
+.skill-hex-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #e5e7eb;
+  text-transform: uppercase;
+}

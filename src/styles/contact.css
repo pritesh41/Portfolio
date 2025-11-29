@@ -1,0 +1,108 @@
+/* background behind card (optional image / gradient) */
+.contact-bg {
+  background: radial-gradient(circle at top, #0b1120 0%, #020617 60%, #000 100%);
+}
+
+/* center card */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main card */
+.contact-card {
+  width: 100%;
+  max-width: 960px;
+  padding: 3.2rem 3.6rem;
+  border-radius: 2.4rem;
+  background: rgba(15, 23, 42, 0.96);
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.9);
+  border: 1px solid #1f2937;
+}
+
+/* small chip on top */
+.contact-chip {
+  border: none;
+  background: rgba(55, 65, 81, 0.8);
+  color: #e5e7eb;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.4rem;
+}
+
+/* title + subtitle */
+.contact-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  margin-bottom: 0.6rem;
+}
+
+.contact-sub {
+  font-size: 1.4rem;
+  color: #9ca3af;
+  margin-bottom: 2.6rem;
+}
+
+.contact-sub a {
+  color: #38bdf8;
+}
+
+/* grid of items */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+}
+
+/* item style */
+.contact-item-modern {
+  padding: 1.8rem 1.6rem;
+  border-radius: 1.6rem;
+  background: radial-gradient(circle at top, #111827 0%, #020617 80%);
+  border: 1px solid #1f2937;
+}
+
+.contact-icon-modern {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  background: rgba(37, 99, 235, 0.25);
+  color: #bfdbfe;
+  margin-bottom: 1.4rem;
+}
+
+.contact-item-modern h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact-item-modern p {
+  font-size: 1.35rem;
+  color: #9ca3af;
+  margin-bottom: 0.8rem;
+}
+
+.contact-meta {
+  font-size: 1.3rem;
+  color: #e5e7eb;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .contact-card {
+    padding: 2.6rem 2.4rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
